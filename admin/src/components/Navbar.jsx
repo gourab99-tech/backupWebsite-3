@@ -19,7 +19,7 @@ export default function Navbar() {
 
     return (
     <div>
-        <nav className="navbar">
+        <nav className="navbar1">
         <h1 className="brand"><Link to="/" className='h1'>Zang</Link></h1>
         <div className="toggle-btn" onClick={handleClick}>
             <span></span>
