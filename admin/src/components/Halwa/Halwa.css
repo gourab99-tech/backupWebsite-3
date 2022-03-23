@@ -78,10 +78,13 @@
     height: 17vw;
     position: relative;
     padding: 2px;
+    display: none;
 
 }
 
 .left1{
-    width: 50%;
+    width: 42%;
+    position: relative;
+    left: 6vw;
 }
 

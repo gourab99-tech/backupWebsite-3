@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from "react-redux"
 import { Link } from "react-router-dom";
@@ -39,72 +38,20 @@ const TestProducts = () => {
     const [qty8, setQty8] = useState(0);
     const dispatch = useDispatch()
     const { reduxSingleProduct, isLoading } = useSelector((state) => state.singleProduct)
-    // const openModal = () => {
-    //     setShowModal(true);
-    //   };
-    
-    const amount1 = 389
-    const amount2 = 199
-    const amount3 = 159
-    const amount4 = 299
-    const amount5 = 259
-    const amount6 = 456
-    const a = amount1 * qty1
-    const b = amount2 * qty2
-    const c = amount3 * qty3
-    const d = amount4 * qty4
-    const e = amount5 * qty5
-    const f = amount6 * qty6
-    const total = a + b + c + d + e + f
 
-=======
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import "./TestProducts.css";
-import Halwa from "../images/Halwa.png";
-import pNutty from "../images/pNutty.png";
-import Tikki from "../images/Tikki.png";
-import Payasam from "../images/Payasam Pic 1.jpeg";
-import Laddoo from "../images/Laddoo Pic 2.png";
-import combo from "../images/combo 1.png";
-import time from "../images/time.png";
-import Serves from "../images/Serving.png";
-import Model from "../components/combo1/combo1";
-import Model1 from "../components/belgium_nutty/belgium_nutty";
-import Model2 from "../components/combo1/combo1";
-
-const TestProducts = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [qty1, setQty1] = useState(0);
-  const [qty2, setQty2] = useState(0);
-  const [qty3, setQty3] = useState(0);
-  const [qty4, setQty4] = useState(0);
-  const [qty5, setQty5] = useState(0);
-  const [qty6, setQty6] = useState(0);
-  const [qty7, setQty7] = useState(0);
-  const [qty8, setQty8] = useState(0);
-  const dispatch = useDispatch();
-  const { reduxSingleProduct, isLoading } = useSelector(
-    (state) => state.singleProduct
-  );
-  const openModal = () => {
-    setShowModal(true);
-  };
->>>>>>> 0f0980bf694fc7cad997ad6e79386a8ede3c6971
-
-  const amount1 = 389;
-  const amount2 = 199;
-  const amount3 = 159;
-  const amount4 = 299;
-  const amount5 = 259;
-  const amount6 = 456;
-  const a = amount1 * qty1;
-  const b = amount2 * qty2;
-  const c = amount3 * qty3;
-  const d = amount4 * qty4;
-  const e = amount5 * qty5;
-  const f = amount6 * qty6;
-  const total = a + b + c + d + e + f;
+    const amount1 = 389;
+    const amount2 = 199;
+    const amount3 = 159;
+    const amount4 = 299;
+    const amount5 = 259;
+    const amount6 = 456;
+    const a = amount1 * qty1;
+    const b = amount2 * qty2;
+    const c = amount3 * qty3;
+    const d = amount4 * qty4;
+    const e = amount5 * qty5;
+    const f = amount6 * qty6;
+    const total = a + b + c + d + e + f;
 
   return (
     <>
@@ -150,14 +97,9 @@ const TestProducts = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <p><i className="arrow down" onClick={() => setbuttonPopup1(true)}></i></p> 
         <Halwaa trigger={buttonPopup1} setTrigger={setbuttonPopup1}>
         </Halwaa>
-=======
-        <button class="arrow down" onClick={openModal}></button>
-        {showModal ? <Model setShowModal={setShowModal} /> : null}
->>>>>>> 0f0980bf694fc7cad997ad6e79386a8ede3c6971
         <hr />
         <div className="main">
           <div className="imageContainer">
@@ -200,33 +142,20 @@ const TestProducts = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <p><i className="arrow down" onClick={() => setbuttonPopup2(true)}></i></p>
         <Nutty trigger={buttonPopup2} setTrigger={setbuttonPopup2}>
         </Nutty>
         <hr />
-        <div className='main'  >
-            <div className='imageContainer'>
-                <div className='priceTag'> 
-                    ₹159
-                </div>
-                <img src={Tiki} />
-               
-=======
-        <button class="arrow down" onClick={openModal}></button>
-        {showModal ? <Model1 setShowModal={setShowModal} /> : null}
-        <hr />
         <div className="main">
           <div className="imageContainer">
             <div className="priceTag">₹159</div>
-            <img src={Tikki} />
+            <img src={Tiki} />
           </div>
           <div className="smallInfo">
             <h6 className="info-header">Caribean Tikki</h6>
             <div className="info">
               <img className="img1" src={time} />
               <i>&nbsp;&nbsp;&nbsp;30 min</i>
->>>>>>> 0f0980bf694fc7cad997ad6e79386a8ede3c6971
             </div>
             <div className="info">
               <img className="img2" src={Serves} />
@@ -258,14 +187,9 @@ const TestProducts = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <p><i className="arrow down" onClick={() => setbuttonPopup3(true)}></i></p>
         <Tikk trigger={buttonPopup3} setTrigger={setbuttonPopup3}>
         </Tikk>
-=======
-        <button class="arrow down" onClick={openModal}></button>
-        {showModal ? <Model2 setShowModal={setShowModal} /> : null}
->>>>>>> 0f0980bf694fc7cad997ad6e79386a8ede3c6971
         <hr />
         <div className="main">
           <div className="imageContainer">
@@ -308,15 +232,9 @@ const TestProducts = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <p><i className="arrow down" onClick={() => setbuttonPopup4(true)}></i></p>
         <Bpayasam trigger={buttonPopup4} setTrigger={setbuttonPopup4}>
         </Bpayasam>
-=======
-        <p>
-          <i class="arrow down"></i>
-        </p>
->>>>>>> 0f0980bf694fc7cad997ad6e79386a8ede3c6971
         <hr />
         <div className="main">
           <div className="imageContainer">
@@ -359,15 +277,9 @@ const TestProducts = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <p><i className="arrow down" onClick={() => setbuttonPopup5(true)}></i></p>
         <Laddu trigger={buttonPopup5} setTrigger={setbuttonPopup5}>
         </Laddu>
-=======
-        <p>
-          <i class="arrow down"></i>
-        </p>
->>>>>>> 0f0980bf694fc7cad997ad6e79386a8ede3c6971
         <hr />
         <div className="main">
           <div className="imageContainer">
@@ -410,15 +322,9 @@ const TestProducts = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <p><i className="arrow down" onClick={() => setbuttonPopup6(true)}></i></p>
         <Combo trigger={buttonPopup6} setTrigger={setbuttonPopup6}>
         </Combo>
-=======
-        <p>
-          <i class="arrow down"></i>
-        </p>
->>>>>>> 0f0980bf694fc7cad997ad6e79386a8ede3c6971
         <hr />
         <div className="main">
           <div className="imageContainer">
@@ -461,13 +367,7 @@ const TestProducts = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <p><i className="arrow down"></i></p>
-=======
-        <p>
-          <i class="arrow down"></i>
-        </p>
->>>>>>> 0f0980bf694fc7cad997ad6e79386a8ede3c6971
         <hr />
         <div className="main">
           <div className="imageContainer">
@@ -510,19 +410,10 @@ const TestProducts = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <p><i className="arrow down"></i></p>
         <hr />
         <Link to="/checkout"><button className="orderBtn" >Pay Rs. {total}</button></Link>
     </section>
-=======
-        <p>
-          <i class="arrow down"></i>
-        </p>
-        <hr />
-        <button className="orderBtn">Pay Rs. {total}</button>
-      </section>
->>>>>>> 0f0980bf694fc7cad997ad6e79386a8ede3c6971
     </>
   );
 };

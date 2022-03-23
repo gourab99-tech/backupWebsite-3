@@ -34,13 +34,13 @@ const Laddu = (props) => {
       </div>
       <b className="info-title3">Ingredients</b>
       <div className="ingredients2">
-        <div className="left1">
+        <div className="left2">
           <ul>
           <li>Grinded and Roasted seasame seeds and cardamoms-Powder</li>
           </ul>
         </div>
         <div className='vertical-line4'></div>
-        <div className="right1">
+        <div className="right2">
           <ul>
             <li>Mashed dates</li>
             <li>Roasted cashews</li>

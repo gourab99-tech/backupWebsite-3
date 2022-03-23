@@ -78,10 +78,11 @@
     height: 17vw;
     position: relative;
     padding: 2px;
+    display: none;
 
 }
 
-.left1{
+.left2{
     width: 50%;
 }
 
