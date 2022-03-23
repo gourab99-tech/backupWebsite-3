@@ -68,9 +68,9 @@
         position: absolute;
         width: 5.5vw;
         height: 7vw;
-        right: 5vw;
+        right: 48vw;
         cursor: pointer;
-        top: 2vw;
+        top: 3vw;
         z-index: 4;
     }
     .toggle-btn span{
@@ -102,14 +102,15 @@
     /* links */
     .links-container{
         position: absolute;
-        top: 0;
+        top: -3.5vw;
         background: white;
-        right: -5vw;
-        padding-right:10vw;
+        right: 43vw;
+        padding-right: 14vw;
         flex-direction: column;
         transition: .5s;
         opacity: 0;
         pointer-events: none;
+        padding-top: 3vw;
     }
     .links-container.show{
         opacity: 1;
@@ -118,5 +119,7 @@
     .link{
         display: block;
         height: 50px;
+        margin: 0;
+        padding: 0;
     }
 }
