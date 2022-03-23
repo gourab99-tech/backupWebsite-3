@@ -1,38 +1,39 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import "./Checkout.css"
 
 const Checkout = () => {
   return (
     
-    <div className="container" style={{marginTop: "20vw"}}>
+    <div className="container">
         <h1>Customer info</h1>
         <form>    
-        <div className="mb-3">
+        <div className="details">
             <label  className="form-label">First Name</label>
             <input type="text" className="form-control" />
         </div>
-        <div className="mb-3">
+        <div className="details">
             <label className="form-label">Last Name</label>
             <input type="text" className="form-control" />
         </div>
-        <div className="mb-3">
+        <div className="details">
             <label  className="form-label">Email</label>
             <input type="email" className="form-control" />
         </div>
         <h1>Where To</h1>
-        <div className="mb-3">
+        <div className="details">
             <label  className="form-label">Address</label>
             <input type="text" className="form-control" />
         </div>
-        <div className="mb-3">
+        <div className="details">
             <label className="form-label">City</label>
             <input type="text" className="form-control" />
         </div>
-        <div className="mb-3">
+        <div className="details">
             <label  className="form-label">State</label>
             <input type="text" className="form-control" />
         </div>
-        <Link to="/payment"><button type="submit" className="btn btn-success">Click to Pay</button></Link>
+        <Link to="/payment"><button type="submit" className="btn1">Click to Pay</button></Link>
         </form>
     </div>
     

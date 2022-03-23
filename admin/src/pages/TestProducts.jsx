@@ -73,7 +73,7 @@ const TestProducts = () => {
             </div>
           </div>
           <div className="quantity">
-            <div>Quantity</div>
+            <div className='quantity-tag'>Quantity</div>
             <div className="quantity-button">
               <button
                 className="btn"
@@ -118,7 +118,7 @@ const TestProducts = () => {
             </div>
           </div>
           <div className="quantity">
-            <div>Quantity</div>
+            <div className='quantity-tag'>Quantity</div>
             <div className="quantity-button">
               <button
                 className="btn"
@@ -163,7 +163,7 @@ const TestProducts = () => {
             </div>
           </div>
           <div className="quantity">
-            <div>Quantity</div>
+            <div className='quantity-tag'>Quantity</div>
             <div className="quantity-button">
               <button
                 className="btn"
@@ -208,7 +208,7 @@ const TestProducts = () => {
             </div>
           </div>
           <div className="quantity">
-            <div>Quantity</div>
+            <div className='quantity-tag'>Quantity</div>
             <div className="quantity-button">
               <button
                 className="btn"
@@ -253,7 +253,7 @@ const TestProducts = () => {
             </div>
           </div>
           <div className="quantity">
-            <div>Quantity</div>
+            <div className='quantity-tag'>Quantity</div>
             <div className="quantity-button">
               <button
                 className="btn"
@@ -298,7 +298,7 @@ const TestProducts = () => {
             </div>
           </div>
           <div className="quantity">
-            <div>Quantity</div>
+            <div className='quantity-tag'>Quantity</div>
             <div className="quantity-button">
               <button
                 className="btn"
@@ -343,7 +343,7 @@ const TestProducts = () => {
             </div>
           </div>
           <div className="quantity">
-            <div>Quantity</div>
+            <div className='quantity-tag'>Quantity</div>
             <div className="quantity-button">
               <button
                 className="btn"
@@ -386,7 +386,7 @@ const TestProducts = () => {
             </div>
           </div>
           <div className="quantity">
-            <div>Quantity</div>
+            <div className='quantity-tag'>Quantity</div>
             <div className="quantity-button">
               <button
                 className="btn"
@@ -412,7 +412,7 @@ const TestProducts = () => {
         </div>
         <p><i className="arrow down"></i></p>
         <hr />
-        <Link to="/checkout"><button className="orderBtn" >Pay Rs. {total}</button></Link>
+        <Link to="/checkout"><button className="orderBtn1" >Pay Rs. {total}</button></Link>
     </section>
     </>
   );
