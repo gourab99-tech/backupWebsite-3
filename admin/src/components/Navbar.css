@@ -68,7 +68,7 @@
         position: absolute;
         width: 5.5vw;
         height: 7vw;
-        right: 48vw;
+        right: 23vh;
         cursor: pointer;
         top: 3vw;
         z-index: 4;
@@ -104,7 +104,7 @@
         position: absolute;
         top: -3.5vw;
         background: white;
-        right: 43vw;
+        right: 20vh;
         padding-right: 14vw;
         flex-direction: column;
         transition: .5s;

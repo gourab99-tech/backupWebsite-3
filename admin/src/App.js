@@ -16,6 +16,8 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path='/products' component = {TestProcuts}/>
       <Route path='/checkout' component = {Checkout}/>
+      <Route path='/payment' component = {Payment}/>
+      
       <Footer/>
    </BrowserRouter>
   );

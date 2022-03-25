@@ -12,9 +12,9 @@ const Footer = () => {
             <div>
             <div style={{textAlign: "center",display: "flex",width: "100%"}}>      
                 <div style={{paddingTop: "60px", color:"green", margin:"auto"}}>
-                <h6 >
+                <h2>
                     Contact
-                </h6>
+                </h2>
                 <p><i></i>thezanglife@gmail.com</p>
                 <p><i></i> + 91-8248890189</p>
                 </div>

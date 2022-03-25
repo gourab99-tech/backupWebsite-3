@@ -17,6 +17,10 @@ const Checkout = () => {
             <input type="text" className="form-control" />
         </div>
         <div className="details">
+            <label  className="form-label">Phone</label>
+            <input type="number" className="form-control" />
+        </div>
+        <div className="details">
             <label  className="form-label">Email</label>
             <input type="email" className="form-control" />
         </div>
@@ -32,6 +36,10 @@ const Checkout = () => {
         <div className="details">
             <label  className="form-label">State</label>
             <input type="text" className="form-control" />
+        </div>
+        <div className="details">
+            <label  className="form-label">Zip/postal code</label>
+            <input type="number" className="form-control" />
         </div>
         <Link to="/payment"><button type="submit" className="btn1">Click to Pay</button></Link>
         </form>
