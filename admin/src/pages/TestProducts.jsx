@@ -34,8 +34,7 @@ const TestProducts = () => {
     const [qty4, setQty4] = useState(0);
     const [qty5, setQty5] = useState(0);
     const [qty6, setQty6] = useState(0);
-    const [qty7, setQty7] = useState(0);
-    const [qty8, setQty8] = useState(0);
+
     const dispatch = useDispatch()
     const { reduxSingleProduct, isLoading } = useSelector((state) => state.singleProduct)
 
@@ -52,6 +51,15 @@ const TestProducts = () => {
     const e = amount5 * qty5;
     const f = amount6 * qty6;
     const total = a + b + c + d + e + f;
+
+    const Amount = (total) => {
+      
+      let new_total = total
+      console.log(new_total);
+      localStorage.setItem('total', total)
+    }
+
+
 
   return (
     <>
@@ -326,10 +334,13 @@ const TestProducts = () => {
         <Combo trigger={buttonPopup6} setTrigger={setbuttonPopup6}>
         </Combo>
         <hr />
-        <Link to="/checkout"><button className="orderBtn1" >Pay Rs. {total}</button></Link>
+        <Link to="/checkout"><button className="orderBtn1" onClick={() => Amount(total)} >Pay Rs. {total}</button></Link>
     </section>
     </>
   );
+
 };
+
+
 
 export default TestProducts;

@@ -2,14 +2,17 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 function Payment() {
+
+	const total = localStorage.getItem('total');
+
   const [pay, setPay] = useState({
 		name: "Zang It",
-		price: 222,
+		price: total,
 	});
 
 	const initPayment = (data) => {
 		const options = {
-			key: process.env.KEY_ID,
+			key: "rzp_test_awSOd88V7EAs3V",
 			amount: data.amount,
 			currency: data.currency,
 			name: pay.name,
@@ -35,13 +38,14 @@ function Payment() {
 	const handlePayment = async () => {
 		try {
 			const orderUrl = "http://localhost:5000/api/payment/orders";
-			const { data } = await axios.post(orderUrl, { amount: pay.price });
+			const { data } = await axios.post(orderUrl, { amount: pay.price});
 			console.log(data);
 			initPayment(data.data);
 		} catch (error) {
 			console.log(error);
 		}
 	};
+
 
 	return (
 		<div className="App">
@@ -53,12 +57,14 @@ function Payment() {
 				<button onClick={handlePayment} className="btn">
 					Pay
 				</button>
+				
 			</div>
 		</div>
 	);
 }
 
 export default Payment;
+
 
 
 
