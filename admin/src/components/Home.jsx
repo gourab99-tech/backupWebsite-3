@@ -16,7 +16,7 @@ export const Home = () => {
   return (
     <div className="conatainer">
       <div className="header">
-        <pre className="zangHeading">Zang  It</pre>
+        <pre className="zangHeading">Zang It</pre>
       </div>
       <div className="maskgroup">
         <div className="maskgroup1">
@@ -51,9 +51,9 @@ export const Home = () => {
           </div>
           <div className="welcome_Section2">
             <p className="sub_para">
-              We proviude you delicious, exotic and healthy food meals with
-              fresh ingredients of high quality, curated by the best chefs in
-              the industry
+              We provide you delicious, exotic and healthy food meals with fresh
+              ingredients of high quality, curated by the best chefs in the
+              industry
             </p>
           </div>
         </div>
@@ -87,7 +87,7 @@ export const Home = () => {
       </div>
       <div>
         <Link to="/products" className="orderBtn">
-          Next
+          Order Now
         </Link>
       </div>
     </div>
